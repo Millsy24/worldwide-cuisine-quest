@@ -1,3 +1,34 @@
+.recipe > img{ 
+width: 100px;
+
+
+}
+
+.recipe > h2 {
+    font-size: 15px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+
+
 body { 
     background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, hsl(18,0%,1%),hsl(18,0%,1%));
     height: 100vh;
@@ -59,7 +90,7 @@ body {
 .recipe-header.recipe-image > img {
     display: block;
     width: 100%;
-    max-height: 200px;
+     max-height: 200px; 
     aspect-ratio: 16/9;
     object-fit:cover;
     object-position: center;
@@ -100,11 +131,11 @@ body {
 
       .recipe-button:hover {
         background-position: right center; /* change the direction of the change here */
-        color: #fff;
+        /* color: #fff;
         text-decoration: none;
-      }
+      } */
      
     
 
 
-
+ */
