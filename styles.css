@@ -25,8 +25,274 @@ body {
     transform: scale(1.025);
 }
 
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    align-items: flex-start;
 
-.recipe-container{
+}
+
+.recipe { 
+    --padding: 1rem;
+    background: white;
+    border: 1px solid black;
+    border-radius: .25rem;
+    overflow: hidden;
+    transition: transform 200ms ease-in-out;
+}
+.recipe:hover{ 
+    transform: translateY(-1rem) ;
+}
+
+
+.recipe-header {
+    font-size: 1.5rem;
+    padding: var(--padding);
+    padding-bottom: 0;
+    margin-bottom: .5rem;
+}
+
+.recipe-image {
+    padding:0;
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    aspect-ratio: 16/9;
+    object-fit:cover;
+    object-position: center;
+}
+
+.recipe-body {
+    font-size: 1rem;
+    padding: 0 var(--padding);
+
+}
+
+.recipe-footer {
+    margin-top: 1rem;
+    padding: var(--padding);
+    padding-top: 0;
+}
+
+
+.recipe-button { 
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    margin: 10px;
+    padding: 10px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+  .recipe-button:hover {
+    background-position: right center; /* change the direction of the change here */
+     color: #fff;
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .recipe-container{
     width: 75%;
     left: 20%;
     justify-content: center;
@@ -103,11 +369,11 @@ body {
 
       .recipe-button:hover {
         background-position: right center; /* change the direction of the change here */
-        color: #fff;
+        /* color: #fff;
         text-decoration: none;
-      } 
+      }  */
      
     
 
 
- 
+

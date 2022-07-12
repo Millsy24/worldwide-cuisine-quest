@@ -29,7 +29,7 @@ const recipeImage = document.createElement(`img`)
 
 
 recipeCard.classList = `recipe`
-recipeImage.classList = 'recipe-header recipe-image'
+recipeImage.classList = 'recipe-image'
 recipeHeader.classList = `recipe-body`
 recipeFooter.classList = `recipe-footer`
 reicpeButton.classList = `recipe-button`
