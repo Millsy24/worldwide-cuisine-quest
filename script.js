@@ -1,34 +1,21 @@
-
-
-fetch ("https://www.themealdb.com/api/json/v1/1/list.php?a=list")
+fetch("https://www.themealdb.com/api/json/v1/1/filter.php?a=American")
 .then(res => res.json())
-.then(data => {
+.then(data => data.meals.forEach(getMeals))
 
-    // console.log(data);
-    // console.log(data.meals);
-    data.meals.forEach(element => {
-        // console.log(element.strArea);
-        cuisine = element.strArea
-        console.log(cuisine);
+const para = document.getElementById("pics")
 
-        fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${cuisine}`)
-        .then(response => response.json())
-        .then(data1 => {
-            // console.log(dishes);
-            // console.log(dishes.meals);
-            data1.meals.forEach(element1 => {
-                dishes = element1.strMeal;
-                // console.log(dishes);
-            })
-            console.log(cuisine);
-            console.log(dishes);
-        })
+function getMeals (meals) {
+    const mealName = document.createElement("p")
+    const images = document.createElement("img")
+
+    mealName.style.color = "white"
+
+    mealName.innerHTML = meals.strMeal
+    images.src = meals.strMealThumb
+
+    // console.log(meals);
+    para.append(mealName)
+    para.append(images)
 
 
-
-    });
-
-})
-
-
-
+}
