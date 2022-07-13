@@ -35,7 +35,7 @@ body {
 
 .recipe { 
     --padding: 1rem;
-    background: #CDCDCD;
+    background: white;
     border: 1px solid black;
     border-radius: .25rem;
     overflow: hidden;
