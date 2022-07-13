@@ -17,14 +17,18 @@ const recipeCard = document.createElement(`div`)
 const recipeImageDiv = document.createElement(`div`)
 const recipeHeader = document.createElement(`h2`)
 const recipeFooter = document.createElement(`footer`)
-const reicpeButton = document.createElement(`button`)
+const recipeButton = document.createElement(`button`)
 const recipeImage = document.createElement(`img`)
 const recipeCountry = document.createElement(`h4`)
 const recipeCategory = document.createElement(`h4`)
-//const recipeInstructions = document.createElement(`p`)
+const recipeInstructions = document.createElement(`p`)
+const commentForm = document.createElement('form')
+const commentInput = document.createElement('input')
+const commentButton = document.createElement('input')
+const commentLabel = document.createElement('label')
+const commentList = document.createElement('ul')
 
     
-
 
 
 
@@ -38,13 +42,22 @@ recipeCard.classList = `recipe`
 recipeImage.classList = 'recipe-image'
 recipeHeader.classList = `recipe-body`
 recipeFooter.classList = `recipe-footer`
-reicpeButton.classList = `recipe-button`
-reicpeButton.innerText = `recipe`
+recipeButton.classList = `recipe-button`
+commentForm.classList = 'comment-form'
+commentInput.id = 'comment-input'
+commentButton.classList = 'comment-button'
+commentInput.type = 'text'
+//commentInput.innerText = 'add a comment'
+commentButton.type = 'submit'
+//commentButton.innerText = 'add comment'
+ commentList.id = 'comment-list'
+ 
+recipeButton.innerText = `recipe`
 recipeHeader.innerText = meals.strMeal
 recipeCountry.innerText = `Country: ${meals.strArea}`
 recipeCategory.innerText = `Category: ${meals.strCategory}`
 recipeImage.src = meals.strMealThumb
-//recipeInstructions.innerText = meals.strInstructions
+recipeInstructions.innerText = meals.strInstructions
 
 
 
@@ -61,15 +74,57 @@ recipeHeader.append(recipeCountry)
 recipeHeader.append(recipeCategory)
 recipeCard.append(recipeHeader)
 recipeCard.append(recipeFooter)
-recipeCard.append(reicpeButton)
-//recipeCard.append(recipeInstructions)
+recipeCard.append(recipeButton)
+recipeCard.append(recipeInstructions)
+recipeFooter.append(commentForm)
+commentForm.append(commentInput)
+commentForm.append(commentButton)
+recipeFooter.append(commentList)
+
+
+commentForm.addEventListener('submit', (e) => {
+        e.preventDefault() 
+        const comment = document.getElementById(`comment-input`).value
+        const newComment = document.createElement('li')
+        newComment.innerText = comment
+        commentList.append(newComment)
+        console.log(newComment)
 
 
 
 
+
+
+})
+
+
+
+
+
+
+recipeInstructions.style.display = "none"
+
+
+
+recipeButton.addEventListener("click", pop)
+
+
+function pop() {
+    if(recipeInstructions.style.display === "none") {
+        recipeInstructions.style.display = "block"
+    } else{
+        recipeInstructions.style.display = "none"
+    }
+}
 
 
  }
 
 
-    
+
+
+
+
+ 
+
+   
