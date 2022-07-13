@@ -25,7 +25,7 @@ const recipeInstructions = document.createElement(`p`)
 const commentForm = document.createElement('form')
 const commentInput = document.createElement('input')
 const commentButton = document.createElement('input')
-const commentLabel = document.createElement('label')
+//const commentLabel = document.createElement('label')
 const commentList = document.createElement('ul')
 
     
@@ -84,7 +84,7 @@ recipeFooter.append(commentList)
 
 commentForm.addEventListener('submit', (e) => {
         e.preventDefault() 
-        const comment = document.getElementById(`comment-input`).value
+        const comment = commentForm.querySelector(`#comment-input`).value
         const newComment = document.createElement('li')
         newComment.innerText = comment
         commentList.append(newComment)
