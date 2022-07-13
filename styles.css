@@ -9,7 +9,7 @@ body {
 }
 
 #logo {
-    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-family: 'Dancing Script', cursive;
     background-image: linear-gradient(0deg, rgb(249, 66, 6),rgb(250, 134, 22),rgb(251, 202, 37));
     -webkit-background-clip: text;
     background-clip: text;
@@ -35,7 +35,7 @@ body {
 
 .recipe { 
     --padding: 1rem;
-    background: white;
+    background: #CDCDCD;
     border: 1px solid black;
     border-radius: .25rem;
     overflow: hidden;
@@ -77,6 +77,7 @@ body {
 
 
 .recipe-button { 
+    
     background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
     margin: 10px;
     padding: 10px 40px;
