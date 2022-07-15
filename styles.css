@@ -21,9 +21,6 @@ body {
     cursor:pointer;
 
 }
-/* #logo:hover {
-    transform: scale(1.025);
-} */
 
 .recipe-container {
     display: grid;
@@ -74,7 +71,6 @@ body {
     padding: var(--padding);
     padding-top: 0;
 }
-
 
 .recipe-button { 
     

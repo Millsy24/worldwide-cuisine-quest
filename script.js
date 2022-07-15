@@ -38,9 +38,9 @@ commentForm.classList = 'comment-form'
 commentInput.id = 'comment-input'
 commentButton.classList = 'comment-button'
 commentInput.type = 'text'
-//commentInput.innerText = 'add a comment'
+commentInput.placeholder = 'add a comment'
 commentButton.type = 'submit'
-//commentButton.innerText = 'add comment'
+commentButton.value = 'post'
  commentList.id = 'comment-list'
  
 recipeButton.innerText = `recipe`
@@ -49,7 +49,6 @@ recipeCountry.innerText = `Country: ${meals.strArea}`
 recipeCategory.innerText = `Category: ${meals.strCategory}`
 recipeImage.src = meals.strMealThumb
 recipeInstructions.innerText = meals.strInstructions
-
 
 
 
@@ -76,16 +75,10 @@ commentForm.addEventListener('submit', (e) => {
         commentList.append(newComment)
         commentForm.reset()
 
-
-
-
-
-
 })
 
 
 recipeInstructions.style.display = "none"
-
 
 
 recipeButton.addEventListener("click", pop)
@@ -99,8 +92,7 @@ function pop() {
     }
 }
 
-
- }
+}
 
 
 
@@ -113,8 +105,3 @@ title.style.transform = "scale(1.025)";
 title.addEventListener('mouseleave', () => {
     title.style.transform = "scale(0.975)"
 })
-
-
- 
-
-   
