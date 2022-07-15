@@ -12,7 +12,6 @@ const recipeContainer = document.querySelector(`.recipe-container`)
     
 
 
-
 const recipeCard = document.createElement(`div`)
 const recipeImageDiv = document.createElement(`div`)
 const recipeHeader = document.createElement(`h2`)
@@ -29,14 +28,6 @@ const commentButton = document.createElement('input')
 const commentList = document.createElement('ul')
 
     
-
-
-
-
-
-
-
-
 
 recipeCard.classList = `recipe`
 recipeImage.classList = 'recipe-image'
@@ -58,11 +49,6 @@ recipeCountry.innerText = `Country: ${meals.strArea}`
 recipeCategory.innerText = `Category: ${meals.strCategory}`
 recipeImage.src = meals.strMealThumb
 recipeInstructions.innerText = meals.strInstructions
-
-
-
-
-
 
 
 
@@ -98,10 +84,6 @@ commentForm.addEventListener('submit', (e) => {
 })
 
 
-
-
-
-
 recipeInstructions.style.display = "none"
 
 
@@ -122,7 +104,15 @@ function pop() {
 
 
 
+const title = document.getElementById("logo")
 
+title.addEventListener('mouseover', () => {
+title.style.transform = "scale(1.025)";
+})
+
+title.addEventListener('mouseleave', () => {
+    title.style.transform = "scale(0.975)"
+})
 
 
  

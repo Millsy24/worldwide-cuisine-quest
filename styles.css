@@ -21,9 +21,9 @@ body {
     cursor:pointer;
 
 }
-#logo:hover {
+/* #logo:hover {
     transform: scale(1.025);
-}
+} */
 
 .recipe-container {
     display: grid;
