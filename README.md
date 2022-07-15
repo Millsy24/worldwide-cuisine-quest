@@ -16,7 +16,7 @@ API used:
 https://www.themealdb.com/api/json/v1/1/search.php?s=
 
 
-Team roles:
+Team roles:    
 AMIRA - JS, Event Listeners    
 LUKAS - HTML, CSS, JS    
 IAN - JSON, JS, API    
