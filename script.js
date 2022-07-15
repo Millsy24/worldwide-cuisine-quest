@@ -8,7 +8,7 @@ const recipeContainer = document.querySelector(`.recipe-container`)
 
 
  function getMeals (meals) {
-    console.log(meals)
+    // console.log(meals)
     
 
 
@@ -88,7 +88,7 @@ commentForm.addEventListener('submit', (e) => {
         const newComment = document.createElement('li')
         newComment.innerText = comment
         commentList.append(newComment)
-        console.log(newComment)
+        commentForm.reset()
 
 
 
