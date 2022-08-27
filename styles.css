@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@600&family=Anek+Telugu&family=Dancing+Script:wght@500&family=Edu+VIC+WA+NT+Beginner:wght@500;700&family=Source+Sans+Pro:ital@0;1&display=swap');
+
+
+
+
 
 body { 
     background-image: radial-gradient(circle at 16% 83%, rgba(148, 148, 148,0.06) 0%, rgba(148, 148, 148,0.06) 50%,rgba(63, 63, 63,0.06) 50%, rgba(63, 63, 63,0.06) 100%),radial-gradient(circle at 68% 87%, rgba(66, 66, 66,0.06) 0%, rgba(66, 66, 66,0.06) 50%,rgba(105, 105, 105,0.06) 50%, rgba(105, 105, 105,0.06) 100%),radial-gradient(circle at 38% 50%, rgba(123, 123, 123,0.06) 0%, rgba(123, 123, 123,0.06) 50%,rgba(172, 172, 172,0.06) 50%, rgba(172, 172, 172,0.06) 100%),linear-gradient(90deg, hsl(18,0%,1%),hsl(18,0%,1%));
     height: 100vh;
     min-height:100%;
-    font-family: 'Source Sans Pro', sans-serif; 
+    font-family: 'Anek Telugu';
     
 
 }
@@ -38,9 +43,9 @@ body {
     overflow: hidden;
     transition: transform 200ms ease-in-out;
 }
-.recipe:hover{ 
+ .recipe:hover{ 
     transform: translateY(-1rem) ;
-}
+} 
 
 
 .recipe-header {
@@ -91,8 +96,41 @@ body {
       color: #fff;
     text-decoration: none;
   }
+  
+  
+  li {
+    list-style-type: none;
+  }
 
+  #comment-input {
+    border-radius: 10px;
+    border: 2px solid black;
+  }
 
+  .comment-button{
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    margin: 10px;
+    padding: 3px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+.comment-button:hover{
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+
+}
+
+#comment-input::placeholder{
+    font-family: 'Anek Telugu';
+    
+}
 
 
 

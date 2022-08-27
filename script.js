@@ -8,7 +8,7 @@ const recipeContainer = document.querySelector(`.recipe-container`)
 
 
  function getMeals (meals) {
-    // console.log(meals)
+    
     
 
 
@@ -24,7 +24,6 @@ const recipeInstructions = document.createElement(`p`)
 const commentForm = document.createElement('form')
 const commentInput = document.createElement('input')
 const commentButton = document.createElement('input')
-//const commentLabel = document.createElement('label')
 const commentList = document.createElement('ul')
 
     
@@ -38,12 +37,11 @@ commentForm.classList = 'comment-form'
 commentInput.id = 'comment-input'
 commentButton.classList = 'comment-button'
 commentInput.type = 'text'
-commentInput.placeholder = 'add a comment'
+commentInput.placeholder = 'Leave your thoughts!'
 commentButton.type = 'submit'
-commentButton.value = 'post'
- commentList.id = 'comment-list'
- 
-recipeButton.innerText = `recipe`
+commentButton.value = 'Post'
+commentList.id = 'comment-list'
+ recipeButton.innerText = `recipe`
 recipeHeader.innerText = meals.strMeal
 recipeCountry.innerText = `Country: ${meals.strArea}`
 recipeCategory.innerText = `Category: ${meals.strCategory}`
